@@ -51,6 +51,9 @@ jobs:
       - name: Run tests 🧪
         run: yarn test
 
+      - name: Run Generate
+        run: yarn generate
+
       - name: Rsync Deployments Action
         uses: Burnett01/rsync-deployments@4.1
         with:
