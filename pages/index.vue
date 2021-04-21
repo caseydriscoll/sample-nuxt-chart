@@ -3,13 +3,26 @@
     <div>
       <Logo />
       <h1 class="title">chart</h1>
-      <Chart />
+      <Chart v-for="(chart, i) in charts" :key="i" :chart="chart" />
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  async asyncData({ $content }) {
+    const charts = await $content('charts').fetch()
+
+    return {
+      charts,
+    }
+  },
+  data() {
+    return {
+      charts: [],
+    }
+  },
+}
 </script>
 
 <style>
