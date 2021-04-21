@@ -1,7 +1,6 @@
 <template>
   <div>
     <Nuxt />
-    chart
   </div>
 </template>
 
