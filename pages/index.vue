@@ -1,8 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
-      <h1 class="title">chart</h1>
+      <h1 class="title">charts</h1>
       <Chart v-for="(chart, i) in charts" :key="i" :chart="chart" />
     </div>
   </div>

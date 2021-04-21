@@ -2,7 +2,7 @@
   <client-only>
     <div>
       <VueApexCharts
-        width="500"
+        width="1000"
         :type="chart.type"
         :options="chart.options"
         :series="chart.series"
